@@ -6,7 +6,7 @@ import { Star } from "./star.js";
 let mySpecialStar = new Star(pencil);
 mySpecialStar.draw();
 
-let star = [
+let stars = [
     mySpecialStar
 ];
 
@@ -14,9 +14,13 @@ let star = [
 
 function gameLoop() {
     
+    //erase canvas
     //draw background
     //draw stars
     //move stars
+    for(let i = 0; i < stars.length; i++) {
+        stars[i].move();
+    }
     //recycle stars/restart stars
 
 

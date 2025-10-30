@@ -17,4 +17,8 @@ export class Star {
         this.pencil.closePath();
     }
 
+    move() {
+        this.x += 5;
+    }
+
 }
