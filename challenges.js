@@ -15,11 +15,13 @@ let stars = [
 function gameLoop() {
     
     //erase canvas
+    pencil.clearRect(0, 0, canvas.Width, canvas.height);
     //draw background
     //draw stars
     //move stars
     for(let i = 0; i < stars.length; i++) {
         stars[i].move();
+        stars[i].draw();
     }
     //recycle stars/restart stars
 
