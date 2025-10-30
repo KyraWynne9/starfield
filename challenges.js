@@ -1,16 +1,26 @@
 let canvas = document.getElementById("myCanvas");
-let pencil = canvas.getContext("2d");
+let pencil = canvas.getContext("2d"); // This gives you the drawing context, like a pencil
 
 import { Star } from "./star.js";
+
 let mySpecialStar = new Star(pencil);
-mySpecialStar.draw(pencil);
+mySpecialStar.draw();
+
+let star = [
+    mySpecialStar
+];
 
 
-function gameloop() {
-//draw background
-//draw stars
-//move stars
-//recycle stars/restart stars
+
+function gameLoop() {
+    
+    //draw background
+    //draw stars
+    //move stars
+    //recycle stars/restart stars
+
+
+
 }
 
-setInterval(gameloop, 50);
+setInterval(gameLoop, 50);
